@@ -2,6 +2,11 @@
 
 This gem provides OpenTracing autoinstrumentation for [Mysql2](https://github.com/brianmario/mysql2).
 
+## Supported versions
+
+- MRI Ruby 2.0 and newer
+- Mysql2 0.5.0 and newer
+
 ## Installation
 
 Add this line to your application's Gemfile:
