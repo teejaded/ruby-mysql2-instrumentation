@@ -12,7 +12,7 @@ Gem::Specification.new do |spec|
   spec.summary       = %q{Mysql2 Tracing Instrumentation}
   spec.description   = %q{OpenTracing instrumentation to trace queries made with Mysql2.}
   spec.homepage      = "https://github.com/signalfx/ruby-mysql2-instrumentation"
-  spec.license       = "MIT"
+  spec.license       = "Apache-2.0"
 
   # Specify which files should be added to the gem when it is released.
   # The `git ls-files -z` loads the files in the RubyGem that have been added into git.
