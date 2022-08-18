@@ -46,7 +46,8 @@ module Mysql2
               end
             rescue
             end
-            span = ::Mysql2::Instrumentation.tracer.start_span(operation_name, tags: tags)
+            parent_span = OpenTracing.active_span
+            span = ::Mysql2::Instrumentation.tracer.start_span(operation_name, tags: tags, child_of: parent_span)
 
             query_original(sql, options)
           rescue => error
